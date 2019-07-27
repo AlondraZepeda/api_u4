@@ -7,5 +7,12 @@ module.exports = {
         await compra.save();
         res.json({ 'status': 'nueva compra creada' });
     },
-
+    getAllCompra: async (req, res) => {
+        const compra = await Compra.find();
+        res.json(compra);
+    },
+    getCompra: async (req, res) => {
+        const compra = await Compra.findById({ _id: req.params.id });
+        res.json(compra);
+    }
 }
