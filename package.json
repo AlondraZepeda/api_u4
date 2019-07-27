@@ -1,0 +1,23 @@
+{
+  "name": "APIU4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "_config.js",
+  "bin": {
+    "APIU4": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "underscore": "^1.9.1",
+    "wagner-core": "^0.2.0",
+    "body-parser": "^1.19.0",
+    "morgan": "^1.9.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.3.11"
+  }
+}
