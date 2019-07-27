@@ -2,9 +2,9 @@ const Clientes = require('./../models/clientes.model');
 const Compra = require('./../models/compra.model');
 var mongoose = require('mongoose');
 
-var compraController=require("./compra.controller");
+var compraController = require("./compra.controller");
 
-async function create(clientes, compra, Clientes, Compra) {
+async function createCliente(clientes, compra, Clientes, Compra) {
 
     var compra = {
         compra: compra
@@ -26,4 +26,4 @@ async function create(clientes, compra, Clientes, Compra) {
     return productCreated;
 }
 
-module.exports.create = create;
+module.exports.createCliente = createCliente;

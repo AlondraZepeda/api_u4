@@ -1,8 +1,8 @@
 const express = require('express');
 const routerCliente = express.Router();
-const { findAllClientes } = require('./../controllers/clientes.controller');
+const { createCliente } = require('./../controllers/clientes.controller');
 
 routerCliente.route('/')
-    .get(findAllClientes);
+    .get(createCliente);
 
-module.exports = routerCliente;
+module.exports = createCliente;

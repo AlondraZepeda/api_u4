@@ -1,11 +1,8 @@
 const express = require('express');
-const routerCapitales = express.Router();
-const { findAllCapitals, findSpecificCapital } = require('./../controllers/capitales.controller');
+const routerCompra = express.Router();
+const { insertCompra} = require('./../controllers/compra.controller');
 
-routerCapitales.route('/')
-    .get(findAllCapitals);
+routerCompra.route('/:id')
+    .get(insertCompra);
 
-routerCapitales.route('/:id')
-    .get(findSpecificCapital);
-
-module.exports = routerCapitales;
+module.exports = routerCompra;
