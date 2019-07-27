@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 const { Schema } = mongoose;
 
-const clienteSchema = new Schema({
+let clienteSchema = new Schema({
     nombre: {
         type: String,
         required: true
@@ -35,4 +35,5 @@ const clienteSchema = new Schema({
   
 });
 
-module.exports = mongoose.model('Cliente',ClienteSchema);
+const clientesModel = mongoose.model('Clientes', clienteSchema, 'clientes');
+module.exports = clientesModel;

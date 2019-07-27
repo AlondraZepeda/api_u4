@@ -16,4 +16,5 @@ const compraSchema = new Schema({
     } 
 });
 
-module.exports = mongoose.model('Cliente',ClienteSchema);
+const compraModel = mongoose.model('Compra', compraSchema, 'compra');
+module.exports  = compraModel;

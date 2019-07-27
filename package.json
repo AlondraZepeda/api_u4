@@ -2,14 +2,13 @@
   "name": "APIU4",
   "version": "1.0.0",
   "description": "",
-  "main": "_config.js",
-  "bin": {
-    "APIU4": "index.js"
-  },
+  "main": "_index.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node bin/index.js",
+    "start": "node bin/index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -21,3 +20,4 @@
     "mongoose": "^5.3.11"
   }
 }
+ 
